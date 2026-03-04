@@ -140,86 +140,88 @@ export default function Home() {
       </div>
 
       {/* Right Side - Card Details */}
-      <div className="col-span-1 lg:col-span-4 flex flex-col relative" style={{ backgroundColor: '#545454', overflow: 'hidden' }}>
+      <div className="col-span-1 lg:col-span-4 flex flex-col relative" style={{ backgroundColor: '#4a4a4a' }}>
         {/* Decorative circles - hidden on mobile */}
         <div className="hidden lg:block absolute left-0 rounded-full" style={{ 
-          width: '32px', 
-          height: '32px', 
-          top: '140px', 
-          marginLeft: '-16px', 
+          width: '20px', 
+          height: '20px', 
+          top: '135px', 
+          marginLeft: '-10px', 
           backgroundColor: '#6a6a6a',
-          boxShadow: '-4px 0 8px rgba(0, 0, 0, 0.3)'
+          boxShadow: 'inset -2px -2px 3px rgba(0, 0, 0, 0.5)',
+          zIndex: 10
         }}></div>
         <div className="hidden lg:block absolute left-0 rounded-full" style={{ 
-          width: '32px', 
-          height: '32px', 
-          top: '182px', 
-          marginLeft: '-16px', 
+          width: '20px', 
+          height: '20px', 
+          top: '175px', 
+          marginLeft: '-10px', 
           backgroundColor: '#d4af37',
-          boxShadow: '-4px 0 12px rgba(212, 175, 55, 0.4), 0 0 20px rgba(212, 175, 55, 0.3)'
+          boxShadow: 'inset -2px -2px 3px rgba(0, 0, 0, 0.3), 0 0 10px rgba(212, 175, 55, 0.4)',
+          zIndex: 10
         }}></div>
         <div className="hidden lg:block absolute left-0 rounded-full" style={{ 
-          width: '32px', 
-          height: '32px', 
-          top: '224px', 
-          marginLeft: '-16px', 
+          width: '20px', 
+          height: '20px', 
+          top: '215px', 
+          marginLeft: '-10px', 
           backgroundColor: '#6a6a6a',
-          boxShadow: '-4px 0 8px rgba(0, 0, 0, 0.3)'
+          boxShadow: 'inset -2px -2px 3px rgba(0, 0, 0, 0.5)',
+          zIndex: 10
         }}></div>
 
-        <div className="flex flex-col flex-1 p-8 md:p-12 lg:p-14 pt-12 md:pt-20 lg:pt-28">
-          <h2 className="text-3xl md:text-4xl font-light mb-12 md:mb-16 tracking-wide" style={{ color: '#d4af37', letterSpacing: '1px' }}>Card Details</h2>
+        <div className="flex flex-col flex-1 p-8 md:p-12 lg:p-20 pt-12 md:pt-20 lg:pt-32">
+          <h2 className="text-3xl md:text-4xl lg:text-4xl font-light mb-14 md:mb-16 lg:mb-20 tracking-wide" style={{ color: '#d4af37', letterSpacing: '2px' }}>Card Details</h2>
 
           {/* Card Type Selection */}
-          <div className="flex flex-col mb-10 md:mb-14">
-            <label className="text-xs md:text-sm mb-5 md:mb-6 font-light tracking-wide" style={{ color: '#c5c5c5' }}>Select Card Type</label>
-            <div className="flex gap-4 md:gap-5 items-center">
-              <button className="bg-white rounded-lg flex items-center justify-center shadow-lg" style={{ width: '56px', height: '38px' }}>
-                <div className="flex items-center gap-1">
-                  <div className="rounded-full" style={{ width: '18px', height: '18px', backgroundColor: '#eb001b' }}></div>
-                  <div className="rounded-full" style={{ width: '18px', height: '18px', backgroundColor: '#f79e1b', marginLeft: '-7px' }}></div>
+          <div className="flex flex-col mb-12 md:mb-14 lg:mb-16">
+            <label className="text-sm mb-6 md:mb-7 font-light tracking-wide" style={{ color: '#b0b0b0' }}>Select Card Type</label>
+            <div className="flex gap-6 md:gap-7 items-center">
+              <button className="bg-white rounded-lg flex items-center justify-center shadow-md" style={{ width: '64px', height: '42px' }}>
+                <div className="flex items-center">
+                  <div className="rounded-full" style={{ width: '22px', height: '22px', backgroundColor: '#eb001b' }}></div>
+                  <div className="rounded-full" style={{ width: '22px', height: '22px', backgroundColor: '#f79e1b', marginLeft: '-9px' }}></div>
                 </div>
               </button>
-              <button className="text-sm md:text-base font-medium tracking-wider" style={{ color: '#8a8a8a' }}>VISA</button>
-              <button className="text-sm md:text-base font-medium tracking-wider italic" style={{ color: '#8a8a8a' }}>Verve</button>
+              <button className="text-base font-medium tracking-wider" style={{ color: '#7a7a7a' }}>VISA</button>
+              <button className="text-base font-medium tracking-wider italic" style={{ color: '#7a7a7a' }}>Verve</button>
             </div>
           </div>
 
           {/* Card Number */}
-          <div className="flex flex-col mb-10 md:mb-14">
-            <label className="text-xs md:text-sm mb-4 md:mb-5 font-light tracking-wide" style={{ color: '#c5c5c5' }}>Card Number</label>
+          <div className="flex flex-col mb-12 md:mb-14 lg:mb-16">
+            <label className="text-sm mb-6 font-light tracking-wide" style={{ color: '#b0b0b0' }}>Card Number</label>
             <input 
               type="text" 
-              className="bg-transparent w-full focus:outline-none text-sm md:text-base"
-              style={{ borderBottom: '1.5px solid #6a6a6a', paddingBottom: '12px', color: '#ffffff' }}
+              className="bg-transparent w-full focus:outline-none text-base"
+              style={{ borderBottom: '1.5px solid #6a6a6a', paddingBottom: '16px', color: '#ffffff' }}
             />
           </div>
 
           {/* Expiry Date and CVV */}
-          <div className="flex gap-8 md:gap-12 mb-12 md:mb-16">
+          <div className="flex gap-12 md:gap-14 mb-16 md:mb-18 lg:mb-20">
             <div className="flex flex-col flex-1">
-              <label className="text-xs md:text-sm mb-4 md:mb-5 font-light tracking-wide" style={{ color: '#c5c5c5' }}>Expiry Date</label>
+              <label className="text-sm mb-6 font-light tracking-wide" style={{ color: '#b0b0b0' }}>Expiry Date</label>
               <input 
                 type="text" 
-                className="bg-transparent w-full focus:outline-none text-sm md:text-base"
-                style={{ borderBottom: '1.5px solid #6a6a6a', paddingBottom: '12px', color: '#8a8a8a' }}
+                className="bg-transparent w-full focus:outline-none text-base"
+                style={{ borderBottom: '1.5px solid #6a6a6a', paddingBottom: '16px', color: '#7a7a7a' }}
                 placeholder="__ / __ / __"
               />
             </div>
-            <div className="flex flex-col" style={{ width: '80px' }}>
-              <label className="text-xs md:text-sm mb-4 md:mb-5 font-light tracking-wide" style={{ color: '#c5c5c5' }}>CVV</label>
+            <div className="flex flex-col" style={{ width: '100px' }}>
+              <label className="text-sm mb-6 font-light tracking-wide" style={{ color: '#b0b0b0' }}>CVV</label>
               <input 
                 type="text" 
-                className="bg-transparent w-full focus:outline-none text-center text-sm md:text-base"
-                style={{ borderBottom: '1.5px solid #6a6a6a', paddingBottom: '12px', color: '#8a8a8a' }}
+                className="bg-transparent w-full focus:outline-none text-center text-base"
+                style={{ borderBottom: '1.5px solid #6a6a6a', paddingBottom: '16px', color: '#7a7a7a' }}
                 placeholder="___"
               />
             </div>
           </div>
         </div>
-
         {/* Checkout Button */}
-        <button className="w-full font-bold text-base md:text-lg flex items-center justify-center tracking-wide" style={{ backgroundColor: '#f5c842', color: '#3a3a3a', padding: '16px 0', letterSpacing: '1px' }}>
+        <button className="w-full font-bold text-lg flex items-center justify-center tracking-wide" style={{ backgroundColor: '#f5c842', color: '#3a3a3a', padding: '22px 0', letterSpacing: '2px' }}>
           Checkout
         </button>
       </div>
