@@ -142,9 +142,9 @@ export default function Home() {
       {/* Right Side - Card Details */}
       <div className="col-span-4 flex flex-col relative" style={{ backgroundColor: '#4a4a4a' }}>
         {/* Decorative circles */}
-        <div className="absolute left-0 rounded-full" style={{ width: '48px', height: '48px', top: '80px', marginLeft: '-24px', backgroundColor: '#e8e8e8' }}></div>
-        <div className="absolute left-0 rounded-full" style={{ width: '28px', height: '28px', top: '110px', marginLeft: '-14px', backgroundColor: '#d4af37' }}></div>
-        <div className="absolute left-0 rounded-full" style={{ width: '16px', height: '16px', top: '132px', marginLeft: '-8px', backgroundColor: '#e8e8e8' }}></div>
+        <div className="absolute left-0 rounded-full" style={{ width: '40px', height: '40px', top: '130px', marginLeft: '-20px', backgroundColor: '#6a6a6a' }}></div>
+        <div className="absolute left-0 rounded-full" style={{ width: '32px', height: '32px', top: '170px', marginLeft: '-16px', backgroundColor: '#d4af37' }}></div>
+        <div className="absolute left-0 rounded-full" style={{ width: '40px', height: '40px', top: '210px', marginLeft: '-20px', backgroundColor: '#6a6a6a' }}></div>
 
         <div className="flex flex-col flex-1 p-14 pt-28">
           <h2 className="text-4xl font-light mb-16 tracking-wide" style={{ color: '#d4af37', letterSpacing: '1px' }}>Card Details</h2>
